@@ -1,0 +1,264 @@
+2017-03-29 19:10:52.873  INFO 2505 --- [restartedMain] br.com.springboot.InActionApplication    : Starting InActionApplication on MacBook-Pro-de-Rodrigo.local with PID 2505 (/Users/dgrodrigo/Workstation/Cursos/SpringBoot/in-action/target/classes started by dgrodrigo in /Users/dgrodrigo/Workstation/Cursos/SpringBoot/in-action)
+2017-03-29 19:10:52.873  INFO 2505 --- [restartedMain] br.com.springboot.InActionApplication    : No active profile set, falling back to default profiles: default
+2017-03-29 19:10:53.041  INFO 2505 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2cafa59f: startup date [Wed Mar 29 19:10:53 BRT 2017]; root of context hierarchy
+2017-03-29 19:10:53.926  INFO 2505 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1491b155] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-29 19:10:54.132  INFO 2505 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8000 (http)
+2017-03-29 19:10:54.139  INFO 2505 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-03-29 19:10:54.140  INFO 2505 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-03-29 19:10:54.196  INFO 2505 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-03-29 19:10:54.197  INFO 2505 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1159 ms
+2017-03-29 19:10:54.297  INFO 2505 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-29 19:10:54.298  INFO 2505 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2017-03-29 19:10:54.300  INFO 2505 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-29 19:10:54.300  INFO 2505 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-29 19:10:54.300  INFO 2505 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-29 19:10:54.301  INFO 2505 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-29 19:10:54.590  INFO 2505 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-29 19:10:54.598  INFO 2505 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-29 19:10:54.637  INFO 2505 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-03-29 19:10:54.638  INFO 2505 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-03-29 19:10:54.639  INFO 2505 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-03-29 19:10:54.663  INFO 2505 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-29 19:10:54.721  INFO 2505 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-03-29 19:10:55.035  INFO 2505 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-03-29 19:10:55.042  INFO 2505 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-03-29 19:10:55.061  INFO 2505 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-29 19:10:55.390  INFO 2505 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2cafa59f: startup date [Wed Mar 29 19:10:53 BRT 2017]; root of context hierarchy
+2017-03-29 19:10:55.433  INFO 2505 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList/{reader}],methods=[GET]}" onto public java.lang.String br.com.springboot.controller.ReadingListController.readersBooks(java.lang.String,org.springframework.ui.Model)
+2017-03-29 19:10:55.434  INFO 2505 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList/{reader}],methods=[POST]}" onto public java.lang.String br.com.springboot.controller.ReadingListController.addToReadingList(java.lang.String,br.com.springboot.model.Book)
+2017-03-29 19:10:55.435  INFO 2505 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-29 19:10:55.436  INFO 2505 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-29 19:10:55.458  INFO 2505 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 19:10:55.458  INFO 2505 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 19:10:55.483  INFO 2505 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 19:10:55.775  INFO 2505 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-03-29 19:10:55.814  INFO 2505 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-29 19:10:55.857  INFO 2505 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8000 (http)
+2017-03-29 19:10:55.861  INFO 2505 --- [restartedMain] br.com.springboot.InActionApplication    : Started InActionApplication in 3.203 seconds (JVM running for 3.541)
+2017-03-29 19:12:18.529  INFO 2505 --- [Thread-10] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2cafa59f: startup date [Wed Mar 29 19:10:53 BRT 2017]; root of context hierarchy
+2017-03-29 19:12:18.531  INFO 2505 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-29 19:12:18.532  INFO 2505 --- [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-29 19:12:18.532  INFO 2505 --- [Thread-10] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-03-29 19:12:18.537  INFO 2505 --- [Thread-10] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-03-29 19:12:20.233  INFO 2568 --- [restartedMain] br.com.springboot.InActionApplication    : Starting InActionApplication on MacBook-Pro-de-Rodrigo.local with PID 2568 (/Users/dgrodrigo/Workstation/Cursos/SpringBoot/in-action/target/classes started by dgrodrigo in /Users/dgrodrigo/Workstation/Cursos/SpringBoot/in-action)
+2017-03-29 19:12:20.234  INFO 2568 --- [restartedMain] br.com.springboot.InActionApplication    : No active profile set, falling back to default profiles: default
+2017-03-29 19:12:20.428  INFO 2568 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f325b44: startup date [Wed Mar 29 19:12:20 BRT 2017]; root of context hierarchy
+2017-03-29 19:12:21.326  INFO 2568 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7edbe865] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-29 19:12:21.549  INFO 2568 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8000 (http)
+2017-03-29 19:12:21.557  INFO 2568 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-03-29 19:12:21.557  INFO 2568 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-03-29 19:12:21.615  INFO 2568 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-03-29 19:12:21.615  INFO 2568 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1190 ms
+2017-03-29 19:12:21.718  INFO 2568 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-29 19:12:21.719  INFO 2568 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2017-03-29 19:12:21.721  INFO 2568 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-29 19:12:21.721  INFO 2568 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-29 19:12:21.722  INFO 2568 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-29 19:12:21.722  INFO 2568 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-29 19:12:22.025  INFO 2568 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-29 19:12:22.034  INFO 2568 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-29 19:12:22.075  INFO 2568 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-03-29 19:12:22.076  INFO 2568 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-03-29 19:12:22.077  INFO 2568 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-03-29 19:12:22.101  INFO 2568 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-29 19:12:22.161  INFO 2568 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-03-29 19:12:22.491  INFO 2568 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-03-29 19:12:22.497  INFO 2568 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-03-29 19:12:22.515  INFO 2568 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-29 19:12:22.845  INFO 2568 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f325b44: startup date [Wed Mar 29 19:12:20 BRT 2017]; root of context hierarchy
+2017-03-29 19:12:22.889  INFO 2568 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList/{reader}],methods=[GET]}" onto public java.lang.String br.com.springboot.controller.ReadingListController.readersBooks(java.lang.String,org.springframework.ui.Model)
+2017-03-29 19:12:22.889  INFO 2568 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList/{reader}],methods=[POST]}" onto public java.lang.String br.com.springboot.controller.ReadingListController.addToReadingList(java.lang.String,br.com.springboot.model.Book)
+2017-03-29 19:12:22.891  INFO 2568 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-29 19:12:22.891  INFO 2568 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-29 19:12:22.914  INFO 2568 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 19:12:22.915  INFO 2568 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 19:12:22.941  INFO 2568 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 19:12:23.236  INFO 2568 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-03-29 19:12:23.274  INFO 2568 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-29 19:12:23.318  INFO 2568 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8000 (http)
+2017-03-29 19:12:23.322  INFO 2568 --- [restartedMain] br.com.springboot.InActionApplication    : Started InActionApplication in 3.648 seconds (JVM running for 3.993)
+2017-03-29 19:12:41.908  INFO 2568 --- [Thread-10] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f325b44: startup date [Wed Mar 29 19:12:20 BRT 2017]; root of context hierarchy
+2017-03-29 19:12:41.910  INFO 2568 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-29 19:12:41.910  INFO 2568 --- [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-29 19:12:41.911  INFO 2568 --- [Thread-10] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-03-29 19:12:41.915  INFO 2568 --- [Thread-10] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-03-29 19:12:43.275  INFO 2608 --- [restartedMain] br.com.springboot.InActionApplication    : Starting InActionApplication on MacBook-Pro-de-Rodrigo.local with PID 2608 (/Users/dgrodrigo/Workstation/Cursos/SpringBoot/in-action/target/classes started by dgrodrigo in /Users/dgrodrigo/Workstation/Cursos/SpringBoot/in-action)
+2017-03-29 19:12:43.276  INFO 2608 --- [restartedMain] br.com.springboot.InActionApplication    : No active profile set, falling back to default profiles: default
+2017-03-29 19:12:43.434  INFO 2608 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@702fff7e: startup date [Wed Mar 29 19:12:43 BRT 2017]; root of context hierarchy
+2017-03-29 19:12:44.348  INFO 2608 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bd2dbde] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-29 19:12:44.585  INFO 2608 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8000 (http)
+2017-03-29 19:12:44.594  INFO 2608 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-03-29 19:12:44.595  INFO 2608 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-03-29 19:12:44.650  INFO 2608 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-03-29 19:12:44.650  INFO 2608 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1219 ms
+2017-03-29 19:12:44.750  INFO 2608 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-29 19:12:44.751  INFO 2608 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2017-03-29 19:12:44.754  INFO 2608 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-29 19:12:44.755  INFO 2608 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-29 19:12:44.755  INFO 2608 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-29 19:12:44.755  INFO 2608 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-29 19:12:45.045  INFO 2608 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-29 19:12:45.053  INFO 2608 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-29 19:12:45.095  INFO 2608 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-03-29 19:12:45.096  INFO 2608 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-03-29 19:12:45.097  INFO 2608 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-03-29 19:12:45.123  INFO 2608 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-29 19:12:45.183  INFO 2608 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-03-29 19:12:45.486  INFO 2608 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-03-29 19:12:45.492  INFO 2608 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-03-29 19:12:45.508  INFO 2608 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-29 19:12:45.819  INFO 2608 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@702fff7e: startup date [Wed Mar 29 19:12:43 BRT 2017]; root of context hierarchy
+2017-03-29 19:12:45.861  INFO 2608 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList/{reader}],methods=[GET]}" onto public java.lang.String br.com.springboot.controller.ReadingListController.readersBooks(java.lang.String,org.springframework.ui.Model)
+2017-03-29 19:12:45.863  INFO 2608 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList/{reader}],methods=[POST]}" onto public java.lang.String br.com.springboot.controller.ReadingListController.addToReadingList(java.lang.String,br.com.springboot.model.Book)
+2017-03-29 19:12:45.864  INFO 2608 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-29 19:12:45.865  INFO 2608 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-29 19:12:45.889  INFO 2608 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 19:12:45.889  INFO 2608 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 19:12:45.916  INFO 2608 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 19:12:46.221  INFO 2608 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-03-29 19:12:46.265  INFO 2608 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-29 19:12:46.315  INFO 2608 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8000 (http)
+2017-03-29 19:12:46.320  INFO 2608 --- [restartedMain] br.com.springboot.InActionApplication    : Started InActionApplication in 3.258 seconds (JVM running for 3.605)
+2017-03-29 19:13:54.896  INFO 2608 --- [Thread-10] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@702fff7e: startup date [Wed Mar 29 19:12:43 BRT 2017]; root of context hierarchy
+2017-03-29 19:13:54.897  INFO 2608 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-29 19:13:54.898  INFO 2608 --- [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-29 19:13:54.898  INFO 2608 --- [Thread-10] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-03-29 19:13:54.902  INFO 2608 --- [Thread-10] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-03-29 19:13:56.258  INFO 2648 --- [restartedMain] br.com.springboot.InActionApplication    : Starting InActionApplication on MacBook-Pro-de-Rodrigo.local with PID 2648 (/Users/dgrodrigo/Workstation/Cursos/SpringBoot/in-action/target/classes started by dgrodrigo in /Users/dgrodrigo/Workstation/Cursos/SpringBoot/in-action)
+2017-03-29 19:13:56.259  INFO 2648 --- [restartedMain] br.com.springboot.InActionApplication    : No active profile set, falling back to default profiles: default
+2017-03-29 19:13:56.440  INFO 2648 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5df37353: startup date [Wed Mar 29 19:13:56 BRT 2017]; root of context hierarchy
+2017-03-29 19:13:57.342  INFO 2648 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5888c56c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-29 19:13:57.568  INFO 2648 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8000 (http)
+2017-03-29 19:13:57.575  INFO 2648 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-03-29 19:13:57.576  INFO 2648 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-03-29 19:13:57.629  INFO 2648 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-03-29 19:13:57.630  INFO 2648 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1193 ms
+2017-03-29 19:13:57.731  INFO 2648 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-29 19:13:57.732  INFO 2648 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2017-03-29 19:13:57.735  INFO 2648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-29 19:13:57.735  INFO 2648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-29 19:13:57.735  INFO 2648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-29 19:13:57.735  INFO 2648 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-29 19:13:58.022  INFO 2648 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-29 19:13:58.030  INFO 2648 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-29 19:13:58.069  INFO 2648 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-03-29 19:13:58.070  INFO 2648 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-03-29 19:13:58.071  INFO 2648 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-03-29 19:13:58.095  INFO 2648 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-29 19:13:58.149  INFO 2648 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-03-29 19:13:58.456  INFO 2648 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-03-29 19:13:58.462  INFO 2648 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-03-29 19:13:58.478  INFO 2648 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-29 19:13:58.793  INFO 2648 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5df37353: startup date [Wed Mar 29 19:13:56 BRT 2017]; root of context hierarchy
+2017-03-29 19:13:58.839  INFO 2648 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList/{reader}],methods=[GET]}" onto public java.lang.String br.com.springboot.controller.ReadingListController.readersBooks(java.lang.String,org.springframework.ui.Model)
+2017-03-29 19:13:58.839  INFO 2648 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList/{reader}],methods=[POST]}" onto public java.lang.String br.com.springboot.controller.ReadingListController.addToReadingList(java.lang.String,br.com.springboot.model.Book)
+2017-03-29 19:13:58.841  INFO 2648 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-29 19:13:58.841  INFO 2648 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-29 19:13:58.863  INFO 2648 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 19:13:58.864  INFO 2648 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 19:13:58.889  INFO 2648 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 19:13:59.190  INFO 2648 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-03-29 19:13:59.233  INFO 2648 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-29 19:13:59.279  INFO 2648 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8000 (http)
+2017-03-29 19:13:59.283  INFO 2648 --- [restartedMain] br.com.springboot.InActionApplication    : Started InActionApplication in 3.248 seconds (JVM running for 3.59)
+2017-03-29 19:16:16.968  INFO 2648 --- [Thread-10] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5df37353: startup date [Wed Mar 29 19:13:56 BRT 2017]; root of context hierarchy
+2017-03-29 19:16:16.970  INFO 2648 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-29 19:16:16.971  INFO 2648 --- [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-29 19:16:16.971  INFO 2648 --- [Thread-10] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-03-29 19:16:16.975  INFO 2648 --- [Thread-10] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-03-29 19:16:18.629  INFO 2737 --- [restartedMain] br.com.springboot.InActionApplication    : Starting InActionApplication on MacBook-Pro-de-Rodrigo.local with PID 2737 (/Users/dgrodrigo/Workstation/Cursos/SpringBoot/in-action/target/classes started by dgrodrigo in /Users/dgrodrigo/Workstation/Cursos/SpringBoot/in-action)
+2017-03-29 19:16:18.630  INFO 2737 --- [restartedMain] br.com.springboot.InActionApplication    : No active profile set, falling back to default profiles: default
+2017-03-29 19:16:18.804  INFO 2737 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b5e23ce: startup date [Wed Mar 29 19:16:18 BRT 2017]; root of context hierarchy
+2017-03-29 19:16:19.688  INFO 2737 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e3123754] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-29 19:16:19.914  INFO 2737 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8000 (http)
+2017-03-29 19:16:19.921  INFO 2737 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-03-29 19:16:19.922  INFO 2737 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-03-29 19:16:19.976  INFO 2737 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-03-29 19:16:19.976  INFO 2737 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1174 ms
+2017-03-29 19:16:20.074  INFO 2737 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-29 19:16:20.075  INFO 2737 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2017-03-29 19:16:20.077  INFO 2737 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-29 19:16:20.078  INFO 2737 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-29 19:16:20.078  INFO 2737 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-29 19:16:20.078  INFO 2737 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-29 19:16:20.364  INFO 2737 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-29 19:16:20.373  INFO 2737 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-29 19:16:20.414  INFO 2737 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-03-29 19:16:20.415  INFO 2737 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-03-29 19:16:20.416  INFO 2737 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-03-29 19:16:20.443  INFO 2737 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-29 19:16:20.501  INFO 2737 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-03-29 19:16:20.802  INFO 2737 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-03-29 19:16:20.808  INFO 2737 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-03-29 19:16:20.827  INFO 2737 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-29 19:16:21.154  INFO 2737 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b5e23ce: startup date [Wed Mar 29 19:16:18 BRT 2017]; root of context hierarchy
+2017-03-29 19:16:21.197  INFO 2737 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList/{reader}],methods=[GET]}" onto public java.lang.String br.com.springboot.controller.ReadingListController.readersBooks(java.lang.String,org.springframework.ui.Model)
+2017-03-29 19:16:21.198  INFO 2737 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList/{reader}],methods=[POST]}" onto public java.lang.String br.com.springboot.controller.ReadingListController.addToReadingList(java.lang.String,br.com.springboot.model.Book)
+2017-03-29 19:16:21.200  INFO 2737 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-29 19:16:21.200  INFO 2737 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-29 19:16:21.222  INFO 2737 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 19:16:21.222  INFO 2737 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 19:16:21.247  INFO 2737 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 19:16:21.544  INFO 2737 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-03-29 19:16:21.582  INFO 2737 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-29 19:16:21.627  INFO 2737 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8000 (http)
+2017-03-29 19:16:21.631  INFO 2737 --- [restartedMain] br.com.springboot.InActionApplication    : Started InActionApplication in 3.508 seconds (JVM running for 3.869)
+2017-03-29 19:16:35.505  INFO 2737 --- [Thread-10] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b5e23ce: startup date [Wed Mar 29 19:16:18 BRT 2017]; root of context hierarchy
+2017-03-29 19:16:35.507  INFO 2737 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-29 19:16:35.507  INFO 2737 --- [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-29 19:16:35.508  INFO 2737 --- [Thread-10] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-03-29 19:16:35.512  INFO 2737 --- [Thread-10] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-03-29 19:16:36.867  INFO 2760 --- [restartedMain] br.com.springboot.InActionApplication    : Starting InActionApplication on MacBook-Pro-de-Rodrigo.local with PID 2760 (/Users/dgrodrigo/Workstation/Cursos/SpringBoot/in-action/target/classes started by dgrodrigo in /Users/dgrodrigo/Workstation/Cursos/SpringBoot/in-action)
+2017-03-29 19:16:36.868  INFO 2760 --- [restartedMain] br.com.springboot.InActionApplication    : No active profile set, falling back to default profiles: default
+2017-03-29 19:16:37.019  INFO 2760 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55ab7c11: startup date [Wed Mar 29 19:16:37 BRT 2017]; root of context hierarchy
+2017-03-29 19:16:37.939  INFO 2760 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b245ff0d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-29 19:16:38.151  INFO 2760 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8000 (http)
+2017-03-29 19:16:38.158  INFO 2760 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-03-29 19:16:38.158  INFO 2760 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-03-29 19:16:38.214  INFO 2760 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-03-29 19:16:38.215  INFO 2760 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1199 ms
+2017-03-29 19:16:38.320  INFO 2760 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-29 19:16:38.321  INFO 2760 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2017-03-29 19:16:38.324  INFO 2760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-29 19:16:38.325  INFO 2760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-29 19:16:38.325  INFO 2760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-29 19:16:38.325  INFO 2760 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-29 19:16:38.616  INFO 2760 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-03-29 19:16:38.625  INFO 2760 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-29 19:16:38.663  INFO 2760 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-03-29 19:16:38.665  INFO 2760 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-03-29 19:16:38.665  INFO 2760 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-03-29 19:16:38.692  INFO 2760 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-29 19:16:38.751  INFO 2760 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-03-29 19:16:39.066  INFO 2760 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-03-29 19:16:39.073  INFO 2760 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-03-29 19:16:39.091  INFO 2760 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-03-29 19:16:39.412  INFO 2760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55ab7c11: startup date [Wed Mar 29 19:16:37 BRT 2017]; root of context hierarchy
+2017-03-29 19:16:39.456  INFO 2760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList/{reader}],methods=[GET]}" onto public java.lang.String br.com.springboot.controller.ReadingListController.readersBooks(java.lang.String,org.springframework.ui.Model)
+2017-03-29 19:16:39.457  INFO 2760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/readingList/{reader}],methods=[POST]}" onto public java.lang.String br.com.springboot.controller.ReadingListController.addToReadingList(java.lang.String,br.com.springboot.model.Book)
+2017-03-29 19:16:39.459  INFO 2760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-29 19:16:39.459  INFO 2760 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-29 19:16:39.481  INFO 2760 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 19:16:39.481  INFO 2760 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 19:16:39.507  INFO 2760 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-29 19:16:39.809  INFO 2760 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-03-29 19:16:39.851  INFO 2760 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-29 19:16:39.897  INFO 2760 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8000 (http)
+2017-03-29 19:16:39.901  INFO 2760 --- [restartedMain] br.com.springboot.InActionApplication    : Started InActionApplication in 3.244 seconds (JVM running for 3.611)
+2017-03-29 19:18:00.785  INFO 2760 --- [Thread-10] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55ab7c11: startup date [Wed Mar 29 19:16:37 BRT 2017]; root of context hierarchy
+2017-03-29 19:18:00.786  INFO 2760 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-29 19:18:00.787  INFO 2760 --- [Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-03-29 19:18:00.787  INFO 2760 --- [Thread-10] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-03-29 19:18:00.792  INFO 2760 --- [Thread-10] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
